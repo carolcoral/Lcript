@@ -17,7 +17,7 @@ A simply script for search todo
 5.<a href="#alert_text">Pop up the text text in the specified element</a>
 
 ## <a id="fuzzy_search_ajax">1.Fuzzy search for ajax</a>
-### First all
+### 1.1 First all
 
 1.import these scripts in your page.Beside the Bootstarp and the Jquery should be import at all of scripts first.But the style of Bootstrap is not must be.You can use your own css file.
 
@@ -35,7 +35,7 @@ A simply script for search todo
 
         Because this script is based on the jquery to do .But you can not have to import the Bootstrap and import what you want a style or theme.
         
-### Then,use it in your page
+### 1.2 Then,use it in your page
 
 1.The following attributes are required
 
@@ -68,7 +68,7 @@ A simply script for search todo
             })
         }
 
-### Importent Notes
+### 1.3 Importent Notes
 
 1.You have to use <code>"keywords"</code> as your ajax request keyword
 
@@ -98,6 +98,9 @@ A simply script for search todo
         "data":""
     }
 
+### 1.4 Demo to show it
+
+![](https://raw.githubusercontent.com/carolcoral/SaveImg/master/lcript.gif)
 
 ## <a id="hidden_click">2.Click blank to hide search results</a>
 
@@ -122,11 +125,3 @@ If you want to pop the text content of the specified element, you can use this m
             lcript.alert(".selected_keywords")
         output:
             "test"
-
-
-
-
-
-## Demo to show it
-
-![](https://raw.githubusercontent.com/carolcoral/SaveImg/master/fuzzysearch.gif)
