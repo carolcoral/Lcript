@@ -4,7 +4,7 @@ A simply script for search todo
 [TOC]
 
 ### Version:0.1
-#### Features:
+#### Features
         
 1.<a href="#fuzzy_search_ajax">Fuzzy search for ajax</a>
 
@@ -90,7 +90,7 @@ A simply script for search todo
             
 3.Request: use <code>"keywords"</code> as your request keyword.
 
-4.Response: <code>"data"</code> is must.If your datatype is json in this response, you have to edit the 96 line in search_box.js.
+4.Response: <code>"data"</code> is must.If your datatype is json in this response, you have to edit the 102 line in lcript.js.
 
     {   
         "code":"",
