@@ -99,7 +99,7 @@
                             var rexq = new RegExp(input_data,"igm")
                             $.each(data, function (i, data) {
                                 // if your data'data is json,you should edit here to make your really data
-                                data = data["template_desc"]
+                                // data = data["template_desc"]
                                 data = data.replace(rexq,"<font size='+1' color='#dc143c'>"+input_data+"</font>")
                                 var html_style = "<a href='javascript:'><li class='"+listGroupItem+"' onclick='choise_one_template(this)'>" + data + "</li></a>"
                                 $(showTabStyleClass).append(html_style)

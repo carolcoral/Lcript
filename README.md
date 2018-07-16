@@ -7,9 +7,13 @@ A simply script for search todo
 #### Features:
         
 1.<a href="#fuzzy_search_ajax">Fuzzy search for ajax</a>
+
 2.<a href="#fuzzy_search_ajax">Highlighted Search results</a>
+
 3.<a href="#hidden_click">Click blank to hide search results</a>
+
 4.<a href="#strim">Remove the white space on both sides of the string</a>
+
 5.<a href="#alert_text">Pop up the text text in the specified element</a>
 
 ## <a id="fuzzy_search_ajax">1.Fuzzy search for ajax</a>
