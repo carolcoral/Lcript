@@ -8,48 +8,25 @@
     <script type="application/javascript" src="src/js/jquery/jquery.js"></script>
     <!--import bootstarp's css-->
     <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
-    <!--import search javascript-->
+    <!--import lcript-->
     <script type="application/javascript" src="src/js/search_box.js"></script>
-
-    <!--style-->
-    <style>
-        html {
-            -ms-overflow-style:none;
-            overflow:-moz-scrollbars-none;
-        }
-        html::-webkit-scrollbar{width:0px}
-
-        .selected_keywords{
-            display: none;
-            position: fixed;
-            width: 590px;
-            max-height: 300px;
-            margin-top: 35px;
-            z-index: 10002;
-        }
-        .selected_keywords > ul{
-            max-height: 300px;
-            min-width: 590px;
-            display: inline-block;
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-    </style>
+    <!--import style for this page-->
+    <link rel="stylesheet" href="src/css/search_box.css">
 </head>
 <body>
 <div class="container-fluid" style="width: 700px;">
     <div class="form-horizontal">
-        <!--查询位置-->
+        <!--select input-->
         <div class="input-group" id="">
             <span class="input-group-addon" id="sizing-addon2">Serach:</span>
-            <input type="text" class="form-control" placeholder="选择模版，支持模糊查询" aria-describedby="sizing-addon2" id="fuzzy_search" oninput="test(this)">
-            <!--搜索结果显示-->
+            <input type="text" class="form-control" placeholder="input keywords and select it" aria-describedby="sizing-addon2" id="fuzzy_search" oninput="test(this)">
+            <!--show selected results-->
             <div class="input-group selected_keywords"></div>
         </div>
-        <!--展示位置-->
+        <!--show tab-->
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h4 class="panel-title">已选择模版</h4>
+                <h4 class="panel-title">Selected:</h4>
             </div>
             <div class="panel-body" id="results_2"></div>
         </div>
@@ -61,7 +38,7 @@
     function test(obj){
         lcript.search_ajax({
             //type of get data,ajax or json
-            "url":"http://localhost/fuzzy_search",
+            "url":"/admin/tsg_fuzzy_search",
             //bind method to this element
             "el":obj,
             //show your have searched results
