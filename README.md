@@ -3,6 +3,15 @@ A simply script for search todo
 
 [TOC]
 
+### Version:0.1
+#### Features:
+        
+        1.Fuzzy search for ajax
+        2.Highlighted Search results 
+        3.Click blank to hide search results
+        4.Remove the white space on both sides of the string
+        5.Pop up the text text in the specified element
+
 ## How to use it 
 ### First all
 
@@ -91,4 +100,4 @@ A simply script for search todo
 
 ## Demo to show it
 
-![](https://raw.githubusercontent.com/carolcoral/SaveImg/master/fuzzysearch.gif)
+![](https://raw.githubusercontent.com/carolcoral/SaveImg/master/lcript.gif)
