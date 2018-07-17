@@ -1,5 +1,6 @@
-﻿# Lcript
-A simply script for search todo
+# Lcript
+
+A simple script for HTML to do.Welcome to propose your suggestions or opinions！
 
 [TOC]
 
