@@ -23,10 +23,10 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 1.Import these scripts in your page.Beside the Bootstarp and the Jquery should be import at all of scripts first.But the style of Bootstrap is not must be.You can use your own css file.
 
 ```
-<!--have to import jquery first-->
-<script type="application/javascript" src="/src/js/jquery/jquery.js"></script>
-<!--import bootstrap-->
-<script type="application/javascript" src="/src/bootstrap/js/bootstrap.min.js"></script>
+        <!--have to import jquery first-->
+        <script type="application/javascript" src="/src/js/jquery/jquery.js"></script>
+        <!--import bootstrap-->
+        <script type="application/javascript" src="/src/bootstrap/js/bootstrap.min.js"></script>
 ```
 
 2.Then you can import this script in your page to do Search.
