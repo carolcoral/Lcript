@@ -21,7 +21,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 * Use it in HTML
 ```
-<script type="application/javascript" src="/src/js/lcript.js"></script>
+        <script type="application/javascript" src="/src/js/lcript.js"></script>
 ```
 * Use it in NodeJS/Webpack
 ```
