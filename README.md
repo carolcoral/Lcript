@@ -22,16 +22,20 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 1.Import these scripts in your page.Beside the Bootstarp and the Jquery should be import at all of scripts first.But the style of Bootstrap is not must be.You can use your own css file.
 
+```
         <!--have to import jquery first-->
         <script type="application/javascript" src="/src/js/jquery/jquery.js"></script>
         <!--import bootstrap-->
         <script type="application/javascript" src="/src/bootstrap/js/bootstrap.min.js"></script>
-    
+```
+
 2.Then you can import this script in your page to do Search.
 
+```
         <!--import search javascript-->
         <script type="application/javascript" src="/src/js/search_box/js"></script>
-        
+```
+
 3.Why we should have to import these script?
 
         Because this script is based on the jquery to do .But you can not have to import the Bootstrap and import what you want a style or theme.
@@ -40,6 +44,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 1.The following attributes are required
 
+```
         //type of get data,ajax or json
         "url":"/admin/tsg_fuzzy_search",
         //bind method to this element
@@ -54,9 +59,11 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
         "showTabStyle":"list-group",
         //li style
         "listGroupItem":"list-group-item"
-            
+```
+
 2.You can use it like this in your page,and add this code <code>oninput="test(this)"</code> in your input box.Ofcourse,you can change the <code>"test"</code> to what you want.When you changed it,don't forget change the function's name too, please.
 
+```
         function test(obj){
             lcript.search_ajax({
                 "url":"/admin/tsg_fuzzy_search",
@@ -68,6 +75,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
                 "listGroupItem":"list-group-item"
             })
         }
+```
 
 ### 1.3 Importent Notes
 
@@ -75,6 +83,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 2.If you want to do something for a search result,you can create a function which name is <code>"choise_one_template"</code>,then create some methods in it.Like this function:
 
+```
             //Add the selected template to the display bar
             function choise_one_template(obj) {
                 //Get the value of the selection
@@ -88,16 +97,19 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
                 //Insert HTML into the specified div
                 $("#results_2").append(selected_template_html)
             }
-            
+```
+
 3.Request: use <code>"keywords"</code> as your request keyword.
 
 4.Response: <code>"data"</code> is must.If your datatype is json in this response, you have to edit the 102 line in lcript.js.
 
+```
     {   
         "code":"",
         "msg":"",
         "data":""
     }
+```
 
 ### 1.4 Demo to show it
 
@@ -107,22 +119,28 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 If you want to hidden the search-box when you click beside it,you can import these script in your page,and the <code>".selected_keywords"</code> is your show-tab of search results.
 
+```
         lcript.hidden(".selected_keywords")
+```
 
 ## <a id="strim">3.Remove the white space on both sides of the string</a>
 
 If you want to pop the text content of the specified element, you can use this method <code>lcript.trim(str)</code> to do it.
 
+```
         input:
             lcript.trim("   test   ")
         output:
             "test"
+```
 
 ## <a id="alert_text">4.Pop up the text text in the specified element</a>
 
 If you want to pop the text content of the specified element, you can use this method <code>lcript.alert(element)</code> to do it.
 
+```
         input:
             lcript.alert(".selected_keywords")
         output:
             "test"
+```
