@@ -28,7 +28,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
         import lcript from './lcript'
         window.lcript.alert('.test')
 ```
-* Also,you can use this to ini it not always to cretae the same code.
+* Also,you can use these to do not only creating the same code always.
 ```
         var lcript = window.lcript
         lcript.alert('.test')
