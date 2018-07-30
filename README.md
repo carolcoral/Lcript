@@ -4,18 +4,16 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 [TOC]
 
-### Version:0.1
-#### Features
+## Version:0.1
+### Features
         
-1.<a href="#fuzzy_search_ajax">Fuzzy search for ajax</a>
+1.<a href="#fuzzy_search_ajax">Fuzzy search for ajax(Highlighted Search results)</a>
 
-2.<a href="#fuzzy_search_ajax">Highlighted Search results</a>
+2.<a href="#hidden_click">Click blank to hide search results</a>
 
-3.<a href="#hidden_click">Click blank to hide search results</a>
+3.<a href="#strim">Remove the white space on both sides of the string</a>
 
-4.<a href="#strim">Remove the white space on both sides of the string</a>
-
-5.<a href="#alert_text">Pop up the text text in the specified element</a>
+4.<a href="#alert_text">Pop up the text text in the specified element</a>
 
 ## How to use
 
@@ -34,7 +32,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
         lcript.alert('.test')
 ```
 
-## <a id="fuzzy_search_ajax">1.Fuzzy search for ajax</a>
+## <a id="fuzzy_search_ajax">1.Fuzzy search for ajax(Highlighted Search results)</a>
 ### 1.1 First all
 
 1.Import these scripts in your page.Beside the Bootstarp and the Jquery should be import at all of scripts first.But the style of Bootstrap is not must be.You can use your own css file.
