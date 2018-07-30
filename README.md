@@ -39,6 +39,11 @@ And,in your page's 'methods' or 'mounted',plaes remenber join 'window' at first 
 ```
         window.lcript.alert('.test')
 ```
+Of course,you can use this to ini it not always to cretae the same code.
+```
+        var lcript = window.lcript
+        lcript.alert('.test')
+```
 
 
 2.Then you can import this script in your page to do Search.
