@@ -29,6 +29,18 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
         <script type="application/javascript" src="/src/bootstrap/js/bootstrap.min.js"></script>
 ```
 
+And,if you want to import it by use node.js,you can follow this to do.
+
+```
+        import lcript from './lcript'
+```
+And,in your page's 'methods' or 'mounted',plaes remenber join 'window' at first like this.
+
+```
+        window.lcript.alert('.test')
+```
+
+
 2.Then you can import this script in your page to do Search.
 
 ```
