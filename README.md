@@ -20,7 +20,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 ## <a id="fuzzy_search_ajax">1.Fuzzy search for ajax</a>
 ### 1.1 First all
 
-1.import these scripts in your page.Beside the Bootstarp and the Jquery should be import at all of scripts first.But the style of Bootstrap is not must be.You can use your own css file.
+1.Import these scripts in your page.Beside the Bootstarp and the Jquery should be import at all of scripts first.But the style of Bootstrap is not must be.You can use your own css file.
 
         <!--have to import jquery first-->
         <script type="application/javascript" src="/src/js/jquery/jquery.js"></script>
@@ -73,7 +73,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 1.You have to use <code>"keywords"</code> as your ajax request keyword
 
-2.If you want to do something for a search result,you can create a function which name is <code>"choise_one_template"</code>,then make some methods in it.Like this function:
+2.If you want to do something for a search result,you can create a function which name is <code>"choise_one_template"</code>,then create some methods in it.Like this function:
 
             //Add the selected template to the display bar
             function choise_one_template(obj) {
