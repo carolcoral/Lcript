@@ -17,6 +17,23 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 5.<a href="#alert_text">Pop up the text text in the specified element</a>
 
+## How to use
+
+* Use it in HTML
+```
+<script type="application/javascript" src="/src/js/lcript.js"></script>
+```
+* Use it in NodeJS/Webpack
+```
+        import lcript from './lcript'
+        window.lcript.alert('.test')
+```
+* Also,you can use this to ini it not always to cretae the same code.
+```
+        var lcript = window.lcript
+        lcript.alert('.test')
+```
+
 ## <a id="fuzzy_search_ajax">1.Fuzzy search for ajax</a>
 ### 1.1 First all
 
@@ -28,23 +45,6 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
         <!--import bootstrap-->
         <script type="application/javascript" src="/src/bootstrap/js/bootstrap.min.js"></script>
 ```
-
-And,if you want to import it by use node.js,you can follow this to do.
-
-```
-        import lcript from './lcript'
-```
-And,in your page's 'methods' or 'mounted',plaes remenber join 'window' at first like this.
-
-```
-        window.lcript.alert('.test')
-```
-Of course,you can use this to ini it not always to cretae the same code.
-```
-        var lcript = window.lcript
-        lcript.alert('.test')
-```
-
 
 2.Then you can import this script in your page to do Search.
 
