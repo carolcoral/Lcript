@@ -18,16 +18,16 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 ## How to use
 
 * Use it in HTML
-```
+```javascript
         <script type="application/javascript" src="/src/js/lcript.js"></script>
 ```
 * Use it in NodeJS/Webpack
-```
+```javascript
         import lcript from './lcript'
         window.lcript.alert('.test')
 ```
 * Also,you can use these to do not only creating the same code always.
-```
+```javascript
         var lcript = window.lcript
         lcript.alert('.test')
 ```
@@ -37,7 +37,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 1.Import these scripts in your page.Beside the Bootstarp and the Jquery should be import at all of scripts first.But the style of Bootstrap is not must be.You can use your own css file.
 
-```
+```javascript
         <!--have to import jquery first-->
         <script type="application/javascript" src="/src/js/jquery/jquery.js"></script>
         <!--import bootstrap-->
@@ -46,7 +46,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 2.Then you can import this script in your page to do Search.
 
-```
+```javascript
         <!--import search javascript-->
         <script type="application/javascript" src="/src/js/search_box/js"></script>
 ```
@@ -59,7 +59,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 1.The following attributes are required
 
-```
+```javascript
         //type of get data,ajax or json
         "url":"/admin/tsg_fuzzy_search",
         //bind method to this element
@@ -78,7 +78,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 2.You can use it like this in your page,and add this code <code>oninput="test(this)"</code> in your input box.Ofcourse,you can change the <code>"test"</code> to what you want.When you changed it,don't forget change the function's name too, please.
 
-```
+```javascript
         function test(obj){
             lcript.search_ajax({
                 "url":"/admin/tsg_fuzzy_search",
@@ -98,7 +98,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 2.If you want to do something for a search result,you can create a function which name is <code>"choise_one_template"</code>,then create some methods in it.Like this function:
 
-```
+```javascript
             //Add the selected template to the display bar
             function choise_one_template(obj) {
                 //Get the value of the selection
@@ -118,7 +118,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 4.Response: <code>"data"</code> is must.If your datatype is json in this response, you have to edit the 102 line in lcript.js.
 
-```
+```javascript
     {   
         "code":"",
         "msg":"",
@@ -134,7 +134,7 @@ A simple script for HTML to do.Welcome to propose your suggestions or opinionsï¼
 
 If you want to hidden the search-box when you click beside it,you can import these script in your page,and the <code>".selected_keywords"</code> is your show-tab of search results.
 
-```
+```javascript
         lcript.hidden(".selected_keywords")
 ```
 
@@ -142,7 +142,7 @@ If you want to hidden the search-box when you click beside it,you can import the
 
 If you want to pop the text content of the specified element, you can use this method <code>lcript.trim(str)</code> to do it.
 
-```
+```javascript
         input:
             lcript.trim("   test   ")
         output:
@@ -153,7 +153,7 @@ If you want to pop the text content of the specified element, you can use this m
 
 If you want to pop the text content of the specified element, you can use this method <code>lcript.alert(element)</code> to do it.
 
-```
+```javascript
         input:
             lcript.alert(".selected_keywords")
         output:
